@@ -14,7 +14,7 @@ const allowedOrigins = [
     'https://gym-os-frontend-omega.vercel.app'
 ];
 app.use(cors({
-    origin: 'allowedOrigins',
+    origin: allowedOrigins,
     credentials: true
 }));
 
