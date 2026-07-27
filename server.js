@@ -9,8 +9,12 @@ connectDB();
 
 const app = express();
 
+const allowedOrigins = [
+    'http://localhost:4200',
+    'https://gym-os-frontend-omega.vercel.app'
+];
 app.use(cors({
-    origin: 'http://localhost:4200',
+    origin: 'allowedOrigins',
     credentials: true
 }));
 
